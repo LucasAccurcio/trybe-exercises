@@ -1,0 +1,21 @@
+body{
+    background-color:turquoise;
+    color: tomato;
+    font-size: 20px;
+    font-style: oblique;
+    text-align: justify;
+}
+h1{
+    size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+.estilo-lista{
+    background-color: navy;
+    color: white;
+}
+p{
+    font-weight: 600;  
+    font-size: 3em; 
+    color: green;
+}
