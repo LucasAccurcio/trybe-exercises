@@ -72,6 +72,47 @@ for (let indice = 0; indice < 25; indice += 1){
 }
 console.log(divDois);
 
+console.log("EXERCÍCIOS BÔNUS");
+console.log("Array em ordem original = "+numbers);
+//BÔNUS
+//1.Ordene o array numbers em ordem crescente e imprima seus valores;
+for (let index = 1; index < array.length; index += 1) {
+  for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+    if (numbers[index] < numbers[secondIndex]) {
+      let position = numbers[index];
+      numbers[index] = numbers[secondIndex];
+      numbers[secondIndex] = position;
+    }
+  }
+}
+console.log("1. Array ordem crescente = "+numbers);
+
+//2.Ordene o array numbers em ordem decrescente e imprima seus valores;
+for (let index = 1; index < array.length; index += 1) {
+  for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+    if (numbers[index] > numbers[secondIndex]) {
+      let position = numbers[index];
+      numbers[index] = numbers[secondIndex];
+      numbers[secondIndex] = position;
+    }
+  }
+}
+console.log("2. Array ordem decrescente = "+numbers);
+
+//3.Novo array a partir do array original multiplicando o primeiro valor pelo próximo
+numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let newNumbers = [];
+let tamanhoArray = numbers.length;
+tamanhoArray -= 1;
+for (let index = 0; index < numbers.length; index += 1) {
+    if (index == tamanhoArray){
+      newNumbers[index] = (numbers[index] * 2);
+    }
+    else{
+      newNumbers[index] = (numbers[index] * numbers[(index+1)]);
+    }
+}
+console.log("3. Novo array a partir do original "+newNumbers);
 /*PERCORRE DOIS ARRAYS COMPARANDO OS VALORES DE UM COM O OUTRO
 let numbers2 = [6, 10, 4, 20, 71, 9, 101, 3, 36, 28];
 let soma = 0;
