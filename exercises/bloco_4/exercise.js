@@ -51,10 +51,26 @@ for (let indice = 0; indice < numbers.length; indice +=1) {
 console.log("6.Quantidade de números ímpares = "+impar);
 
 //7. Utilizando for , descubra qual o menor valor contido no array e imprima-o;
+let menorValor = numbers[0];
+for (let indice = 1; indice < numbers.length; indice+=1) {
+  if(menorValor > numbers[indice]) {
+    menorValor = numbers[indice];
+  }
+}
+console.log("7.Menor valor do array é = "+menorValor);
 
 //8. Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado;
-
+let array = [];
+for (let indice = 0; indice < 25; indice += 1){
+  array[indice] =  indice+1;
+}
+console.log(array);
 //9. Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 .
+let divDois = [];
+for (let indice = 0; indice < 25; indice += 1){
+  divDois[indice] = array[indice]/2;
+}
+console.log(divDois);
 
 /*PERCORRE DOIS ARRAYS COMPARANDO OS VALORES DE UM COM O OUTRO
 let numbers2 = [6, 10, 4, 20, 71, 9, 101, 3, 36, 28];
