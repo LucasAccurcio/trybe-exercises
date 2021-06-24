@@ -35,11 +35,18 @@ let maiorValor = 0;
 for (let indice = 0; indice < numbers.length; indice+=1) {
   soma = soma + numbers[indice];
 }
-console.log(soma);
+console.log("Soma dos números do array = "+soma);
 
 //6. Descubra quantos valores ímpares existem no array e imprima o 
 //   resultado. Caso não exista nenhum, imprima a mensagem: 
 //   "nenhum valor ímpar encontrado"
+let impar = 0;
+for (let indice = 0; indice < numbers.length; indice +=1) {
+  if((numbers[indice]%2)==1){
+    impar += 1;
+  }
+}
+console.log("Quantidade de números ímpares = "+impar);
 
 /*PERCORRE DOIS ARRAYS COMPARANDO OS VALORES DE UM COM O OUTRO
 let numbers2 = [6, 10, 4, 20, 71, 9, 101, 3, 36, 28];
