@@ -105,23 +105,27 @@ let newNumbers = [];
 let tamanhoArray = numbers.length;
 tamanhoArray -= 1;
 for (let index = 0; index < numbers.length; index += 1) {
-    if (index == tamanhoArray){
-      newNumbers[index] = (numbers[index] * 2);
-    }
-    else{
-      newNumbers[index] = (numbers[index] * numbers[(index+1)]);
-    }
+  if (index == tamanhoArray){
+    newNumbers.push((numbers[index] * 2));/*Faz a mesma coisa que a linha de baixo*/
+  //newNumbers[index] = (numbers[index] * 2);
+  }
+  else{
+    newNumbers.push((numbers[index] * numbers[(index+1)]));/*Faz a mesma coisa que a linha de baixo*/
+  // newNumbers[index] = (numbers[index] * numbers[(index+1)]);
+  }
 }
-console.log("3. Novo array a partir do original "+newNumbers);
-/*PERCORRE DOIS ARRAYS COMPARANDO OS VALORES DE UM COM O OUTRO
+console.log("3. Novo array a partir do original ="+newNumbers);
+
+// PERCORRE DOIS ARRAYS COMPARANDO OS VALORES DE UM COM O OUTRO
 let numbers2 = [6, 10, 4, 20, 71, 9, 101, 3, 36, 28];
-let soma = 0;
+let soma2 = 0;
+numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 for (let indice = 0; indice < numbers.length; indice+=1) {
   for (let indice2 = 0; indice2 < numbers.length; indice2+=1) {
     //console.log(numbers[indice]+" : "+numbers2[indice2]);
       if(numbers[indice] === numbers2[indice2]){
-        soma += 1;
+        soma2 += 1;
       }
     }
   }
-console.log(soma);*/
+console.log("4.Números repetidos em 2 arrays diferentes = "+soma2);
