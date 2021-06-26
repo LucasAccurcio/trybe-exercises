@@ -37,34 +37,23 @@ for (let index = 0; index < nroBase2; index +=1) {
 }
 
 //4. Faça uma pirâmide sendo n a base dela
-let nroBasePiramide = 5;
-let altura = (nroBasePiramide/2)+0.5;
-console.log(altura);
-let linha = "";
-let contadorLinha = nroBasePiramide-2;
-for (let index = 0; index < altura; index +=1) {
-  
-  // if(index === altura-1) {
-  //     for (let index2 = 0; index2 < nroBasePiramide; index2 +=1) {
-  //       linha = linha +"*";
-  //     }
-  //   }
-  //   else{
-  //     if( )
-  //     for (let index3 = 0; index3 < contadorLinha; index3 +=1) {
-  //       linha = linha +"*";
-  //     }
-  //     linha = linha+"-";
-  //     contadorLinha -= 1;
-  //   }
-  console.log(contadorLinha);
-  contadorLinha -= 1;
-}
+let nroBasePiramide = 9;
+let altura = (nroBasePiramide/2)+0.5;//Ou meio da linha
+let contaEsquerda = altura;
+let contaDireita = altura;
 
-let nroBase = 5;
-let linha = "";
-for (let index = 0; index < nroBase; index +=1) {
-    linha = linha +"*";
-      console.log(linha);
+for (let index = 0; index < altura; index +=1) {
+  let linha = "";
+  for (let index2 = 1; index2 <= nroBasePiramide; index2 +=1) {
+    if(index2 >= contaEsquerda && index2 <= contaDireita) {
+      linha = linha +"*";
+    }
+    else{
+      linha = linha+"-";
+    }
   }
+  console.log(linha); 
+  contaEsquerda -= 1;
+  contaDireita += 1;
+}
 
