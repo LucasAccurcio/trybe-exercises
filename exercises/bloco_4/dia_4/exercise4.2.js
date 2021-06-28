@@ -53,5 +53,3 @@ console.log("O índice do maior valor é o "+indiceMaiorNumero);
 //Retorna índice com o menor valor
 let indiceMenorNumero = retornaIndiceMenorValor(numeros);
 console.log("O índice do menor valor é o "+indiceMenorNumero);
-
-
