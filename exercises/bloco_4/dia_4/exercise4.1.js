@@ -23,6 +23,13 @@ let info2 = {
   recorrente: 'Sim'
 };
 
+let imprime = '';
 for (let key in info, info2) {
-  console.log(key);
+  
+  if(info[key] === 'Sim' && info2[key] === 'Sim'){
+    console.log("Ambos recorrentes");
+     }
+    else{
+    console.log(info[key] + " e " + info2[key]);
+    }
 }
