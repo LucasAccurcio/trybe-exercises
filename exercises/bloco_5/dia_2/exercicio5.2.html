@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      //1.
+      let caption = document.createElement('h1');
+      caption.innerHTML = "Exercício 5.2 - JavaScript DOM";
+      document.body.appendChild(caption);
+      //2.
+      let mainContent = document.createElement('div');
+      mainContent.className = 'main-content';
+      document.body.appendChild(mainContent);
+      //3.
+      let centerContent = document.querySelector('.main-content');
+      let contentCentral = document.createElement('div');
+      contentCentral.className = 'center-content';
+      contentCentral.innerHTML = 'Centro';
+      centerContent.appendChild(contentCentral);
+      //4.
+      let divCentral = document.querySelector('.center-content');
+      let pharagraph = document.createElement('p');
+      pharagraph.innerHTML = "Contém o parágrafo criado.";
+      divCentral.appendChild(pharagraph);
+      //5.
+      let leftContent = document.createElement('div');
+      leftContent.className = 'left-content';
+      centerContent.appendChild(leftContent);
+      //6.
+      let rigthContet = document.createElement('div');
+      rigthContet.className = 'right-content';
+      centerContent.appendChild(rigthContet);
+      //7.
+    </script>
+  </body>
+</html>
