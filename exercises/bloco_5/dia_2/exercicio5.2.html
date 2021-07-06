@@ -86,6 +86,25 @@
       rigthContet.className = 'right-content';
       centerContent.appendChild(rigthContet);
       //7.
+      let imgLeft = document.createElement('img');
+      imgLeft.className = 'small-image';
+      imgLeft.src = 'https://picsum.photos/200';
+      let imgLeftContent = document.querySelector('.left-content');
+      imgLeftContent.appendChild(imgLeft);
+      //8.
+      let valores = [];
+      for (let i = 0; i < 10; i += 1) {
+        valores[i] = i+1;
+        console.log(valores[i]);
+      }
+      let listaDireita = document.querySelector('.right-content');
+      for (let i = 0; i < valores.length; i += 1) {
+        let numero = valores[i];
+        let itemLista = document.createElement('li');
+        itemLista.innerHTML = numero;
+        listaDireita.appendChild(itemLista);
+      }
+      //
     </script>
   </body>
 </html>
