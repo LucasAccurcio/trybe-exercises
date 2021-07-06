@@ -12,6 +12,7 @@
 
       .title {
         text-align: center;
+        border: 2px solid black;
       }
 
       .main-content {
@@ -82,9 +83,9 @@
       leftContent.className = 'left-content';
       centerContent.appendChild(leftContent);
       //6.
-      let rigthContet = document.createElement('div');
-      rigthContet.className = 'right-content';
-      centerContent.appendChild(rigthContet);
+      let rigthContent = document.createElement('div');
+      rigthContent.className = 'right-content';
+      centerContent.appendChild(rigthContent);
       //7.
       let imgLeft = document.createElement('img');
       imgLeft.className = 'small-image';
@@ -116,6 +117,20 @@
       let subTitulo3 = document.createElement('h3');
       subTitulo3.innerHTML = 'Sub Título 3';
       centerContent.appendChild(subTitulo3);
+      
+      //10.1.
+      caption.className = 'title';
+      //10.2.
+      subTitulo1.className = 'description';
+      subTitulo2.className = 'description';
+      subTitulo3.className = 'description';
+      //10.3.
+      let div = document.querySelector('.left-content');
+      div.parentElement.removeChild(div);
+      //10.4.
+      rigthContent.style.marginRight = 'auto';
+      //10.5.
+      contentCentral.style.backgroundColor = "green";
     </script>
   </body>
 </html>
