@@ -93,18 +93,16 @@
       let imgLeftContent = document.querySelector('.left-content');
       imgLeftContent.appendChild(imgLeft);
       //8.
-      let valores = [];
-      for (let i = 0; i < 10; i += 1) {
-        valores[i] = i+1;
-        console.log(valores[i]);
-      }
+      let valores = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      let ul = document.createElement('ul');
       let listaDireita = document.querySelector('.right-content');
       for (let i = 0; i < valores.length; i += 1) {
         let numero = valores[i];
         let itemLista = document.createElement('li');
-        itemLista.innerHTML = numero;
-        listaDireita.appendChild(itemLista);
+        itemLista.innerText = numero;
+        ul.appendChild(itemLista);
       }
+      listaDireita.appendChild(ul)
       //9.
       let subTitulo1 = document.createElement('h3');
       subTitulo1.innerHTML = 'Sub Título 1';
@@ -131,6 +129,10 @@
       rigthContent.style.marginRight = 'auto';
       //10.5.
       contentCentral.style.backgroundColor = "green";
+      //10.6.
+      console.log(listaDireita.children);
+      ul.lastChild.remove();
+      ul.lastChild.remove();
     </script>
   </body>
 </html>
