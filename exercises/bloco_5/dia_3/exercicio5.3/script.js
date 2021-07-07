@@ -47,7 +47,6 @@ for (let day of days) {
 }
 
 //Exercício 2:
-const input = document.getElementById('task-input');//Pega o texto da caixa
 const clickBtn = document.getElementById('btn-add');
 const divButtons = document.querySelector('.buttons-container');
 
@@ -173,3 +172,21 @@ days.addEventListener('click', function(event) {
 });
 };
 paintDay();
+
+//Exercício Bônus 
+function addCompromissos() {
+  let input = document.querySelector('#task-input');//Pega o texto da caixa
+  let btn = document.querySelector('#btn-add');
+  let lista = document.querySelector('.task-list');//usando GetElement não vai, em nenhuma das 3 variáreis.
+  btn.addEventListener('click', function(){
+    if (input.value.length === 0) {
+      alert('Insira um valor no campo de texto.');
+    } else {
+      let listItem = document.createElement('li');
+      listItem.innerText = input.value;
+      lista.appendChild(listItem);
+    }
+  });
+  
+}
+addCompromissos();
