@@ -133,3 +133,10 @@ function newTask(tarefa) {
 newTask('cozinhar');
 
 //Exercício 8
+function addSubTitle (cor) {
+  let localContainer = document.querySelector('.my-tasks');
+  let newDiv = document.createElement('div');
+  newDiv.style.backgroundColor = cor;
+  localContainer.appendChild(newDiv);
+}
+addSubTitle('green');
