@@ -107,3 +107,20 @@ function btnFriday() {
   });
 };
 btnFriday();
+
+//Exercício 6
+function mouseOver(event) {
+  event.target.style.fontSize = '22px';
+  event.target.style.fontWeight = 'bold';
+  }
+function mouseOut(event) {
+  event.target.style.fontSize = '20px';
+  event.target.style.fontWeight = 'Normal';
+}
+
+let dias = document.querySelector('#days');
+console.log(dias);
+dias.addEventListener('mouseover', mouseOver);
+dias.addEventListener('mouseout', mouseOut);
+
+//Exercício 7
