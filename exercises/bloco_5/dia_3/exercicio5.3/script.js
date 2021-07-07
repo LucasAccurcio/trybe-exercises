@@ -115,7 +115,7 @@ function mouseOver(event) {
   }
 function mouseOut(event) {
   event.target.style.fontSize = '20px';
-  event.target.style.fontWeight = 'Normal';
+  event.target.style.fontWeight = 'normal';
 }
 
 let dias = document.querySelector('#days');
@@ -124,3 +124,12 @@ dias.addEventListener('mouseover', mouseOver);
 dias.addEventListener('mouseout', mouseOut);
 
 //Exercício 7
+function newTask(tarefa) {
+  let local = document.querySelector('.my-tasks');
+  let span = document.createElement('span');
+  span.innerHTML = tarefa;
+  local.appendChild(span);
+}
+newTask('cozinhar');
+
+//Exercício 8
