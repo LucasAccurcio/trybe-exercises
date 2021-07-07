@@ -112,7 +112,7 @@ btnFriday();
 function mouseOver(event) {
   event.target.style.fontSize = '22px';
   event.target.style.fontWeight = 'bold';
-  }
+}
 function mouseOut(event) {
   event.target.style.fontSize = '20px';
   event.target.style.fontWeight = 'normal';
@@ -129,14 +129,31 @@ function newTask(tarefa) {
   let span = document.createElement('span');
   span.innerHTML = tarefa;
   local.appendChild(span);
-}
+};
 newTask('cozinhar');
 
 //Exercício 8
 function addSubTitle (cor) {
   let localContainer = document.querySelector('.my-tasks');
   let newDiv = document.createElement('div');
+  newDiv.className = 'task';
   newDiv.style.backgroundColor = cor;
   localContainer.appendChild(newDiv);
-}
+};
 addSubTitle('green');
+
+//Exercicio 9
+function selectTask () {
+  let local = document.querySelector('.task');
+  let task = '';
+  local.addEventListener('click', function () {
+    if (task === '') {
+      local.className = 'task selected';
+      task = 'task select';
+    } else {
+      local.className = 'task';
+      task = '';
+    }
+  });
+};
+selectTask();
