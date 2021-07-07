@@ -45,7 +45,6 @@ for (let day of days) {
   dayItem.innerHTML = day;
   getDayList.appendChild(dayItem);
 }
-console.log(getDayList);
 
 //Exercício 2:
 const input = document.getElementById('task-input');//Pega o texto da caixa
@@ -117,9 +116,7 @@ function mouseOut(event) {
   event.target.style.fontSize = '20px';
   event.target.style.fontWeight = 'normal';
 }
-
 let dias = document.querySelector('#days');
-console.log(dias);
 dias.addEventListener('mouseover', mouseOver);
 dias.addEventListener('mouseout', mouseOut);
 
@@ -157,3 +154,22 @@ function selectTask () {
   });
 };
 selectTask();
+
+//Exercício 10
+function paintDay () {
+
+let task = document.getElementsByClassName('task selected');
+let days = document.querySelector('#days');
+let localTask = document.querySelector('.task');
+let cor = localTask.style.backgroundColor;
+days.addEventListener('click', function(event) {
+  let corAtual = event.target.style.color;
+  if (task.length > 0 && corAtual !== cor){
+    let color = task[0].style.backgroundColor
+    event.target.style.color = color;
+  } else {
+    event.target.style.color = 'rgb(119,119,119)';
+  }
+});
+};
+paintDay();
