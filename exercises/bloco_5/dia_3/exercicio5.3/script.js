@@ -52,12 +52,30 @@ const input = document.getElementById('task-input');//Pega o texto da caixa
 const clickBtn = document.getElementById('btn-add');
 const divButtons = document.querySelector('.buttons-container');
 
-function clicouBtn() {
+function clicouBtn(btnName) {
   let newButton = document.createElement('button');
   newButton.id = 'btn-holiday';
-  newButton.innerHTML = input.value; //Texto da caixa
+  newButton.innerHTML = btnName;
   divButtons.appendChild(newButton);
-  console.log("Clicou");
 }
-let stringBtn = 
-clickBtn.addEventListener('click', clicouBtn);
+clicouBtn('Feriados');
+
+
+//Exercício 3:
+function btnFeriado() {
+  const btnFeriados = document.querySelector('#btn-holiday');
+  let feriados = document.querySelectorAll('.holiday');
+  let newColor = 'red';
+  let oldColor = '#777';
+  
+  btnFeriados.addEventListener('click', function(){
+    for (let i = 0; i < feriados.length; i += 1) {
+      if (feriados[i].style.color === newColor) {
+        feriados[i].style.color = oldColor;
+      } else {
+        feriados[i].style.color = newColor;
+      }
+    }
+  });
+};
+btnFeriado();
