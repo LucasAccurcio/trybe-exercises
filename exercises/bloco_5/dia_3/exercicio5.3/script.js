@@ -13,6 +13,7 @@ function createDaysOfTheWeek() {
 
 createDaysOfTheWeek();
 // Escreva seu código abaixo.
+//Exercício 1:
 function daysOfMonth () {
   let day = [];
   for (let i = 1; i <= 31; i += 1) {
@@ -26,7 +27,7 @@ const getDayList = document.getElementById('days');
 
 for (let i = 29; i <= 30 ; i +=1) {
   const dayItem = document.createElement('li');
-  dayItem.className = 'days';
+  dayItem.className = 'day';
   dayItem.innerHTML = i;
   getDayList.appendChild(dayItem);
 }
@@ -45,3 +46,18 @@ for (let day of days) {
   getDayList.appendChild(dayItem);
 }
 console.log(getDayList);
+
+//Exercício 2:
+const input = document.getElementById('task-input');//Pega o texto da caixa
+const clickBtn = document.getElementById('btn-add');
+const divButtons = document.querySelector('.buttons-container');
+
+function clicouBtn() {
+  let newButton = document.createElement('button');
+  newButton.id = 'btn-holiday';
+  newButton.innerHTML = input.value; //Texto da caixa
+  divButtons.appendChild(newButton);
+  console.log("Clicou");
+}
+let stringBtn = 
+clickBtn.addEventListener('click', clicouBtn);
