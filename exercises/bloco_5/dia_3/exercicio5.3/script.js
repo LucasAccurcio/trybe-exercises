@@ -52,13 +52,13 @@ const input = document.getElementById('task-input');//Pega o texto da caixa
 const clickBtn = document.getElementById('btn-add');
 const divButtons = document.querySelector('.buttons-container');
 
-function clicouBtn(btnName) {
+function newBtnHoliday(btnName) {
   let newButton = document.createElement('button');
   newButton.id = 'btn-holiday';
   newButton.innerHTML = btnName;
   divButtons.appendChild(newButton);
 }
-clicouBtn('Feriados');
+newBtnHoliday('Feriados');
 
 
 //Exercício 3:
@@ -79,3 +79,14 @@ function btnFeriado() {
   });
 };
 btnFeriado();
+
+//Exercício 4
+function newBtnFriday(btnName) {
+  let newButton = document.createElement('button');
+  newButton.id = 'btn-holiday';
+  newButton.innerHTML = btnName;
+  divButtons.appendChild(newButton);
+}
+newBtnFriday('Sexta-feira');
+
+//Exercício 5
