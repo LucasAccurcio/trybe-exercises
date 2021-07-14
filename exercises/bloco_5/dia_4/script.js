@@ -40,7 +40,7 @@ window.onload = function() {
   initialRenderization();
 };
 
-//SESION STORAGE
+//SESSION STORAGE
 /* const button = document.getElementById('add-button');
 const input = document.getElementById('phrases-input');
 const list = document.getElementById('phrases-list');
