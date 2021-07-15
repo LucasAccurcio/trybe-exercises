@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(32, 32, 32);
+  color: rgb(189, 189, 189)
+}
+
+.dados-pessoais input[type="text"]{
+  width: 300px;
+}
+
+.dados-pessoais input[type="email"]{
+  width: 300px;
+}
+
+.last-job #cargo {
+  width: 300px;
+}
+
+.last-job textarea {
+  resize: none;
+  width: 300px;
+  height: 100px;
+}
+
