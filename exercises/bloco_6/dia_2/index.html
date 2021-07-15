@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="bulma-0.9.3/bulma/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link href="validation.min.css" rel="stylesheet">
   <title>Formulário de currículo</title>
 </head>
 <body>
@@ -64,10 +66,14 @@
       </div>
       <div class="container field">
         <label class="label" for="start-date">Data de Início:</label>
-        <input class="input" id="start-date" name="start-date" type="date" required>
+        <input class="input" id="start-date" name="start-date" type="text" required>
       </div>
     <button class="button is-info" type="submit" id="submit">Enviar</button>
   </form>
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="pikaday.js"></script>
+<script>
+    var picker = new Pikaday({ field: document.getElementById('start-date') });
+</script>
 </body>
 </html>
