@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+        border: 2px solid black;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      //1.
+      let caption = document.createElement('h1');
+      caption.innerHTML = "Exercício 5.2 - JavaScript DOM";
+      document.body.appendChild(caption);
+      //2.
+      let mainContent = document.createElement('div');
+      mainContent.className = 'main-content';
+      document.body.appendChild(mainContent);
+      //3.
+      let centerContent = document.querySelector('.main-content');
+      let contentCentral = document.createElement('div');
+      contentCentral.className = 'center-content';
+      contentCentral.innerHTML = 'Centro';
+      centerContent.appendChild(contentCentral);
+      //4.
+      let divCentral = document.querySelector('.center-content');
+      let pharagraph = document.createElement('p');
+      pharagraph.innerHTML = "Contém o parágrafo criado.";
+      divCentral.appendChild(pharagraph);
+      //5.
+      let leftContent = document.createElement('div');
+      leftContent.className = 'left-content';
+      centerContent.appendChild(leftContent);
+      //6.
+      let rigthContent = document.createElement('div');
+      rigthContent.className = 'right-content';
+      centerContent.appendChild(rigthContent);
+      //7.
+      let imgLeft = document.createElement('img');
+      imgLeft.className = 'small-image';
+      imgLeft.src = 'https://picsum.photos/200';
+      let imgLeftContent = document.querySelector('.left-content');
+      imgLeftContent.appendChild(imgLeft);
+      //8.
+      let valores = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      let ul = document.createElement('ul');
+      let listaDireita = document.querySelector('.right-content');
+      for (let i = 0; i < valores.length; i += 1) {
+        let numero = valores[i];
+        let itemLista = document.createElement('li');
+        itemLista.innerText = numero;
+        ul.appendChild(itemLista);
+      }
+      listaDireita.appendChild(ul)
+      //9.
+      let subTitulo1 = document.createElement('h3');
+      subTitulo1.innerHTML = 'Sub Título 1';
+      centerContent.appendChild(subTitulo1);
+
+      let subTitulo2 = document.createElement('h3');
+      subTitulo2.innerHTML = 'Sub Título 2';
+      centerContent.appendChild(subTitulo2);
+
+      let subTitulo3 = document.createElement('h3');
+      subTitulo3.innerHTML = 'Sub Título 3';
+      centerContent.appendChild(subTitulo3);
+      
+      //10.1.
+      caption.className = 'title';
+      //10.2.
+      subTitulo1.className = 'description';
+      subTitulo2.className = 'description';
+      subTitulo3.className = 'description';
+      //10.3.
+      let div = document.querySelector('.left-content');
+      div.parentElement.removeChild(div);
+      //10.4.
+      rigthContent.style.marginRight = 'auto';
+      //10.5.
+      contentCentral.style.backgroundColor = "green";
+      //10.6.
+      console.log(listaDireita.children);
+      ul.lastChild.remove();
+      ul.lastChild.remove();
+    </script>
+  </body>
+</html>
