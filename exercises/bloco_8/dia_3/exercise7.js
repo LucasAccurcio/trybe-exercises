@@ -68,9 +68,11 @@ const expectedResult = 'O Senhor dos Anéis';
 
 function authorWith3DotsOnName() {
   // escreva seu código aqui
-  let newArray = books.filter((book) => book.author.name[1] === '.' && book.author.name[4] === '.' && book.author.name[7] === '.').map((book) => book.name);
-  return newArray[0];
+  let newArray = books.find((book) => (book.author.name[1] === '.' && book.author.name[4] === '.' && book.author.name[7] === '.')).name;
+  return newArray;
 }
+// find() retorna o primeiro elemento
+// filter() ira retornar um array e eu teria que pegar o primeiro elemento
 console.log(authorWith3DotsOnName());
 
 assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
