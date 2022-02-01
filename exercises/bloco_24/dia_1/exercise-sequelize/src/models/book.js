@@ -4,7 +4,10 @@ const Book = (sequelize, DataTypes) => {
   author: DataTypes.STRING,
   pageQuantity: DataTypes.INTEGER,
   createdAt: DataTypes.DATE,
-  },);
+  },
+  {
+    timestamps: false, // Como não existe o campo updatedAt, esse argumento remove a obrigatoriedade e na hora de chamar a função no controle ela não quebra.
+  });
 
   return Book;
 }

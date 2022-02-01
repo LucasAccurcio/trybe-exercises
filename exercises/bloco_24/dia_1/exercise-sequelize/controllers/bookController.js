@@ -21,9 +21,12 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const { id } = req.params;
-    const book = await Book.findByPk(id, {
-      attributes: ['title', 'author', 'pageQuantity', 'createdAt']});
+    // SE EU NÃO UTILIZAR O TIMESTAMPS NO CONTROLLER
+    // PARA O CAMPO "updatedAt" PRECISO USAR A FUNÇÃO ABAIXO
+    /* const book = await Book.findByPk(id, {
+      attributes: ['title', 'author', 'pageQuantity', 'createdAt']}); */
 
+    const book = await Book.findByPk(id); // UTILIZANDO O TIMESTAMP /CONTROLLERS
     if (!book) return res.status(404).json({ message: 'Livro não encontrado' });
 
     return res.status(200).json(book);
