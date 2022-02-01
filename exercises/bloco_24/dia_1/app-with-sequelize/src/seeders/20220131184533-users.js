@@ -4,17 +4,19 @@ module.exports = {
   up: async (queryInterface, Sequelize) => queryInterface.bulkInsert('Users',
     [
       {
-        fullName: 'Leonardo',
+        full_name: 'Leonardo',
         email: 'leo@test.com',
+        phone_num: '+551193214-3214',
         // usamos a função CURRENT_TIMESTAMP do SQL para salvar a data e hora atual nos campos `createdAt` e `updatedAt`
-        createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
-        updatedAt: Sequelize.literal('CURRENT_TIMESTAMP'),
+        created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
+        updated_at: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
       {
-        fullName: 'JEduardo',
+        full_name: 'JEduardo',
         email: 'edu@test.com',
-        createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
-        updatedAt: Sequelize.literal('CURRENT_TIMESTAMP'),
+        phone_num: '+551193214-3214',
+        created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
+        updated_at: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
     ], {}),
 
