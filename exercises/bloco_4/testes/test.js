@@ -7,8 +7,8 @@
   return false;
 }
 const data = '01/01/2022';
-console.log(validaData(data));
- */
+console.log(validaData(data)); */
+
 
 /* const arrayObjects = [
   { name: 'Lucas', age: 5 },
@@ -23,7 +23,33 @@ const newArray = arrayObjects.map(({ name, age }) => [name, age]);
 console.log(newArray[0]);
  */
 
-const isValid = 'string';
+/* const isValid = 'string';
 const isNotValid = 10;
 
-if ((typeof isValid || typeof isNotValid) !== 'number') return console.log('é diferente de number')
+if ((typeof isValid || typeof isNotValid) !== 'number') return console.log('é diferente de number') */
+
+/* function validateEmail(data) {
+  // const emailRegex = /^[\w-\.]+@([\w-]+\.)+[w-]{2,4}$/;
+  const emailRegex = 	
+  /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  if(!emailRegex.test(data)) {
+    return true;
+  }
+  return false
+}
+
+const email = 'lucas@gmail.com';
+console.log(validateEmail(email)); */
+
+// const obj = {
+//   name: 'lucas',
+//   email: 'lucas@gmail.com'
+// };
+// const { tel } = obj
+// if(!tel) console.log('undefined')
+// console.log(tel);
+
+const x = 11;
+console.log(x ^ 2);
+console.log(x ** 2);
