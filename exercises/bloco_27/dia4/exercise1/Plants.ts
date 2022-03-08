@@ -13,6 +13,7 @@ interface IPlant {
 
 interface IOpsInfo { createdPlants: number }
 
+// eslint-disable-next-line no-shadow
 enum FileType {
   plants,
   opsInfo
