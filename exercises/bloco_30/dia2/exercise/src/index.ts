@@ -1,22 +1,17 @@
-  // import FrameController from './Controllers/Frame';
-  // import LensController from './Controllers/Lens';
-  // import Frame from './Interfaces/Frame';
-  // import Lens from './Interfaces/Lens';
-  import CustomRouter from './Routes/Router';
-  import App from './server';
+import RecordStoreController from './controllers/RecordStore';
 
-  const server = new App();
+import RecordStore from './interfaces/RecordStore';
+import CustomRouter from './routes/router';
+import App from './server';
 
-  // const lensController = new LensController();
-  // const frameController = new FrameController();
+const server = new App();
 
-  // const lensRouter = new CustomRouter<Lens>();
-  // lensRouter.addRoute(lensController);
+const recordStoreController = new RecordStoreController();
 
-  // const frameRouter = new CustomRouter<Frame>();
-  // frameRouter.addRoute(frameController);
+const recordStoreRouter = new CustomRouter<RecordStore>();
+recordStoreRouter.addRoute(recordStoreController);
 
-  // server.addRouter(lensRouter.router);
-  // server.addRouter(frameRouter.router);
+server.addRouter(recordStoreRouter.router);
 
-  server.startServer();
+
+server.startServer();
