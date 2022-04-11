@@ -1,5 +1,3 @@
-  // src/Controllers/index.ts
-
   import { Request, Response } from 'express';
   import Service from '../services';
 

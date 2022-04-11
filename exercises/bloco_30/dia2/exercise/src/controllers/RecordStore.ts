@@ -1,5 +1,3 @@
-  // src/Controllers/Frame.ts
-
   import { Request, Response } from 'express';
   import Controller, { RequestWithBody, ResponseError } from '.';
   import RecordStoreService from '../services/RecordStore';
@@ -10,7 +8,7 @@
 
     constructor(
       service = new RecordStoreService(),
-      route = '/frames',
+      route = '/store',
     ) {
       super(service);
       this._route = route;

@@ -13,7 +13,7 @@ const recordStoreSchema = new Schema<RecordStoreDocument>({
 });
 
 class RecordStoreModel extends MongoModel<RecordStore> {
-  constructor(model = createModel('RecordStore', recordStoreSchema)) {
+  constructor(model = createModel('RecordStore', recordStoreSchema, 'RecordStore')) {
     super(model);
   }
 }
