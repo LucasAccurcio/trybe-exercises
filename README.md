@@ -285,4 +285,4 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 38-2: _Pilhas e Filas_
 - [ ] 38-3: _[Projeto - TING - Trybe Is Not Google]()_
 
-## FIM! :party:
+### Fim! :trophy::fireworks:
