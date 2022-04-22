@@ -25,7 +25,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [x] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [x] 3-4: _HTML Semântico_
-- [x] 3-5: _[Projeto - HTML & CSS]()_
+- [x] 3-5: _[Projeto - Lessons Learned]()_
 
 ##### Bloco 4: Introdução - JavaScript
 
@@ -54,7 +54,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-3: _CSS Flexbox - Part 1_
 - [x] 6-4: _CSS Flexbox - Part 2_
 - [x] 6-5: _CSS Responsivo - Mobile First_
-- [x] 6-6: _[Projeto - Página inicial do Facebook]()_
+- [x] 6-6: _[Projeto - Trybewarts]()_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
@@ -77,6 +77,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 9-2: _JavaScript Promises_
 - [x] 9-3: _Jest - Testes Assíncronos_
 - [x] 9-4: _[Projeto - Carrinho de Compras]()_
+- [x] 9-5: _[Projeto - Jest Assíncrono e Mocking]()_
 
 ## Desenvolvimento Front-end :heavy_check_mark:
 
@@ -166,13 +167,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 22-4: _Express - HTTP com Node.js_
 - [x] 22-5: _Express - Middlewares_
 - [x] 22-6: _[Projeto - Talker Manager]()_
-
-##### Bloco 22: Bancos de dados relacionais
-
-- [x] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [x] 22-2: _Normalização, Formas Normais e Dumps_
-- [x] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [x] 22-3: _[Projeto - One For All]()_
 
 ##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful_
 
