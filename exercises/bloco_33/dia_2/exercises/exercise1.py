@@ -1,3 +1,5 @@
+# Faça um programa que receba um nome e imprima o mesmo na vertical em escada invertida
+
 string = "PEDRO"
 
 indice = 0
