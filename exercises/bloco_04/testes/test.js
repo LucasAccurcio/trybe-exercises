@@ -54,7 +54,9 @@ console.log(validateEmail(email)); */
 // // console.log(x ** 2);
 // const a = {};
 
-
+const a = 5;
+const b = "5";
+console.log(a+b);
 
 
 
