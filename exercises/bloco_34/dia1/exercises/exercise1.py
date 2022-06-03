@@ -16,6 +16,8 @@ class Tv:
     def modificar_canal(self, novo_canal):
         if (0 < novo_canal < 100):
             self.canal = novo_canal
+        else:
+            raise ValueError('Canal indisponível')
     
     def ligar_desligar(self):
         self.ligada = not self.ligada
