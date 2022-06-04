@@ -1,0 +1,31 @@
+Olá em arquivo
+Olá em arquivo
+Olá em arquivo
+Olá em arquivo
+Olá em arquivo
+Olá em arquivo
+Olá em arquivo
+[INFO - 03/06/2022 22:38:45]: opa
+Olá em arquivo
+[INFO - 03/06/2022 22:39:34]: info
+[ALERTA - 03/06/2022 22:39:34]: alerta
+Olá em arquivo
+[INFO - 03/06/2022 22:39:52]: info
+[ALERTA - 03/06/2022 22:39:52]: alerta
+[ERRO - 03/06/2022 22:39:52]: erro
+[INFO - 03/06/2022 22:40:28]: info
+[ALERTA - 03/06/2022 22:40:28]: alerta
+[ERRO - 03/06/2022 22:40:28]: erro
+[DEBUG - 03/06/2022 22:40:28]: debug
+[INFO - 03/06/2022 22:42:08]: info
+[ALERTA - 03/06/2022 22:42:08]: alerta
+[ERRO - 03/06/2022 22:42:08]: erro
+[DEBUG - 03/06/2022 22:42:08]: debug
+[INFO - 03/06/2022 22:43:03]: info
+[ALERTA - 03/06/2022 22:43:03]: alerta
+[ERRO - 03/06/2022 22:43:03]: erro
+[DEBUG - 03/06/2022 22:43:03]: debug
+[INFO - 03/06/2022 22:43:18]: info
+[ALERTA - 03/06/2022 22:43:18]: alerta
+[ERRO - 03/06/2022 22:43:18]: erro
+[DEBUG - 03/06/2022 22:43:18]: debug
